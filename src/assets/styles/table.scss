@@ -1,0 +1,39 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: auto;
+  & thead {
+    & tr {
+      & th {
+        color: $black;
+        font-size: $font-md;
+        font-weight: 500;
+        padding: 1em;
+        border-bottom: 1px solid $blue-denim;
+      }
+    }
+  }
+  & tbody {
+    & tr {
+      & td {
+        font-size: $font-md;
+        text-transform: capitalize;
+        color: $black;
+        padding: 1em;
+        & img {
+          width: 50px;
+          object-fit: contain;
+          display: inline-block;
+          vertical-align: middle;
+          border-radius: 50%;
+          & + span {
+            margin-left: 1em;
+          }
+        }
+      }
+      &:hover {
+        background-color: $blue-denim-010;
+      }
+    }
+  }
+}

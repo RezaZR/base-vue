@@ -1,0 +1,173 @@
+@each $size in $size-in-pxs {
+  .radius-#{$size} {
+    border-radius: $size;
+  }
+  .w-#{$size} {
+    width: #{$size};
+  }
+}
+
+@each $size in $size-in-ems {
+  .padding-#{$size} {
+    padding: $size;
+  }
+  .padding-x-#{$size} {
+    padding-right: #{$size};
+    padding-left: #{$size};
+  }
+  .padding-right-#{$size} {
+    padding-right: #{$size};
+  }
+  .padding-bottom-#{$size} {
+    padding-bottom: #{$size};
+  }
+  .margin-right-#{$size} {
+    margin-right: $size;
+  }
+  .margin-top-#{$size} {
+    margin-top: $size;
+  }
+  .margin-bottom-#{$size} {
+    margin-bottom: $size;
+  }
+}
+
+@each $list in $list-display {
+  .display-#{$list} {
+    display: $list;
+  }
+}
+
+@each $list in $list-weight {
+  .weight-#{$list} {
+    font-weight: $list;
+  }
+}
+
+@each $list in $list-vertical {
+  .vertical-#{$list} {
+    vertical-align: $list;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.background-white {
+  background-color: $white;
+}
+
+.background-white-blueish {
+  background-color: $white-blueish;
+}
+
+.background-white-whisper {
+  background-color: $white-whisper;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.color-black {
+  color: $black;
+}
+
+.color-blue-denim {
+  color: $blue-denim;
+}
+
+.color-red {
+  color: $red;
+}
+
+.font-sm {
+  font-size: $font-sm;
+}
+
+.font-md {
+  font-size: $font-md;
+}
+
+.font-lg {
+  font-size: $font-lg;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.margin-right-05em {
+  margin-right: 0.5em;
+}
+
+.margin-left-05em {
+  margin-left: 0.5em;
+}
+
+.margin-bottom-025em {
+  margin-bottom: 0.25em;
+}
+
+.margin-bottom-05em {
+  margin-bottom: 0.5em;
+}
+
+.padding-right-05em {
+  padding-right: 0.5em;
+}
+
+.padding-left-05em {
+  padding-left: 0.5em;
+}
+
+.border-right-2px-black {
+  border-right: 2px solid $black;
+}
+
+.border-right-1px-black-020 {
+  border-right: 1px solid $black-020;
+}
+
+.box {
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media (min-width: 992px) and (max-width: 1366px) {
+  .box {
+    padding: 0.5em;
+  }
+}

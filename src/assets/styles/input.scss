@@ -1,0 +1,120 @@
+input,
+textarea,
+select {
+  height: 40px;
+  font-size: $font-md;
+  background-color: $white;
+  border: 1px solid $white;
+  padding: 0.5em;
+  border-radius: 6px;
+  &.white-blueish {
+    background-color: $white-blueish !important;
+    color: $black;
+  }
+  &.white-whisper {
+    background-color: $white-whisper !important;
+    color: $black;
+  }
+  &.blue-denim {
+    background-color: $blue-denim !important;
+    color: $white;
+  }
+  &::-webkit-input-placeholder,
+  &::placeholder {
+    color: $grey;
+  }
+  &::-webkit-calendar-picker-indicator {
+    background-color: transparent;
+  }
+}
+
+.input-icon {
+  font-weight: 600;
+  padding: 0.5em;
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  background-color: $blue-denim;
+  border-radius: 6px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  color: $white;
+  width: 29px;
+  height: 29px;
+  & svg {
+    width: 15px;
+    fill: $white;
+    vertical-align: middle;
+  }
+  &--click {
+    cursor: pointer;
+    pointer-events: all;
+    &.cross {
+      vertical-align: middle;
+      font-size: $font-md;
+    }
+  }
+}
+
+.input-field {
+  position: relative;
+  margin: 0.5em 0;
+  & label {
+    font-size: $font-md;
+    color: $black;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  & .box {
+    height: 40px;
+    padding: 0.5em;
+    background-color: $white;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  & .error {
+    display: block;
+    color: $red;
+    font-size: $font-md;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.input-inline {
+  position: relative;
+  margin: 0.5em 0;
+  & label {
+    display: inline-block;
+    font-size: $font-md;
+    width: 13%;
+  }
+  & input {
+    width: 87%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1366px) {
+  input,
+  textarea,
+  select {
+    height: 35px;
+  }
+  .input-inline {
+    & label {
+      width: 18%;
+    }
+    & input {
+      width: 82%;
+    }
+  }
+}
+
+.input-field {
+  & label {
+    font-size: $font-sm;
+  }
+  & .error {
+    font-size: $font-sm;
+  }
+}

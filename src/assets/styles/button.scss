@@ -1,0 +1,77 @@
+.button {
+  padding: 0.75em 2.5em;
+  font-size: $font-md;
+  text-align: center;
+  position: relative;
+  &--blue-denim {
+    background: $blue-denim;
+    color: $white;
+  }
+  &--red {
+    background: $red;
+    color: $white;
+  }
+  &--accent {
+    background: $blue-denim;
+    background: $gradient-accent-color;
+    color: $white;
+  }
+  &--shadow-bottom {
+    box-shadow: $shadow-bottom-24-black-020;
+    -webkit-transition: box-shadow 0.5s ease-out;
+    -moz-transition: box-shadow 0.5s ease-out;
+    -o-transition: box-shadow 0.5s ease-out;
+    transition: box-shadow 0.5s ease-out;
+    &:hover {
+      box-shadow: $shadow-bottom-44-black-030;
+    }
+  }
+  & svg {
+    display: inline-block;
+    width: 15px;
+    vertical-align: middle;
+    &.white {
+      fill: $white;
+    }
+    & + span {
+      vertical-align: bottom;
+      margin-left: 0.5em;
+    }
+  }
+  &:disabled {
+    cursor: no-drop;
+    background: unset;
+    background-color: $white-blueish-hover;
+    color: $grey-dove;
+    & svg {
+      fill: $grey-dove;
+    }
+  }
+}
+
+a {
+  &.button {
+    font-size: $font-md;
+    &--blue-denim {
+      background: $blue-denim;
+      color: $white;
+    }
+    &--accent {
+      background: $blue-denim;
+      background: $gradient-accent-color;
+      color: $white;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1366px) {
+  .button {
+    padding: 0.75em;
+    font-size: $font-sm;
+  }
+  a {
+    &.button {
+      font-size: $font-sm;
+    }
+  }
+}

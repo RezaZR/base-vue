@@ -1,0 +1,79 @@
+$primary-font: "Rubik", Arial, Helvetica, sans-serif;
+
+$font-xxs: 8px;
+$font-xs: 10px;
+$font-sm: 12px;
+$font-md: 14px;
+$font-lg: 18px;
+$font-xl: 24px;
+$font-xxl: 32px;
+$font-xxxl: 40px;
+$font-xxxxl: 48px;
+
+$primary-color: rgba(24, 117, 186, 1);
+$secondary-color: rgba(80, 188, 73, 1);
+
+$accent-color: rgba(82, 190, 176, 1);
+$accent-color-2: rgba(132, 232, 220, 1);
+
+$black: rgba(0, 0, 0, 1);
+$black-075: rgba(0, 0, 0, 0.75);
+$black-050: rgba(0, 0, 0, 0.5);
+$black-030: rgba(0, 0, 0, 0.3);
+$black-020: rgba(0, 0, 0, 0.2);
+$black-015: rgba(0, 0, 0, 0.15);
+
+$grey: rgba(236, 236, 236, 1);
+$grey-035: rgba(236, 236, 236, 0.35);
+
+$grey-dove: rgba(100, 100, 100, 1);
+
+$white: rgba(255, 255, 255, 1);
+$white-075: rgba(255, 255, 255, 0.75);
+$white-blueish: rgba(243, 244, 247, 1);
+$white-blueish-hover: rgba(228, 230, 236, 1);
+$white-whisper: rgba(245, 246, 250, 1);
+
+$blue-water: rgba(234, 238, 248, 1);
+$blue-pattens: rgba(216, 238, 254, 1);
+$blue-denim: rgba(25, 117, 184, 1);
+$blue-denim-075: rgba(25, 117, 184, 0.75);
+$blue-denim-05: rgba(25, 117, 184, 0.5);
+$blue-denim-010: rgba(25, 117, 184, 0.1);
+$blue-ebony: rgba(14, 19, 42, 1);
+
+$blue-light-downy: rgba(95, 200, 186, 1);
+$blue-light-tradewind: rgba(88, 174, 162, 1);
+$blue-light-smalt: rgba(80, 148, 139, 1);
+$blue-light-faded-jade: rgba(72, 123, 116, 1);
+
+$red: rgba(184, 25, 25, 1);
+
+$green: rgba(47, 160, 88, 1);
+
+$yellow: rgba(222, 228, 50, 1);
+
+$orange: rgba(255, 109, 33, 1);
+
+$gradient-accent-color: transparent
+  linear-gradient(180deg, $primary-color 0%, #2e90b5 100%, $accent-color 100%)
+  0% 0% no-repeat padding-box;
+
+$gradient-pattens-whisper: transparent
+  linear-gradient(180deg, $blue-pattens 0%, $white-whisper 25%) 0% 0% no-repeat
+  padding-box;
+
+$shadow-bottom-22-black-015: 0px 2px 2px $black-015;
+$shadow-bottom-24-black-020: 0px 2px 4px $black-020;
+$shadow-bottom-44-black-020: 0px 4px 4px $black-020;
+$shadow-bottom-44-black-030: 0px 4px 4px $black-030;
+$shadow-bottom-110-black-020: 0px 1px 10px $black-020;
+$shadow-right-22-black-015: 2px 0px 2px $black-015;
+$shadow-left-22-black-015: -2px 0px 2px $black-015;
+
+$size-in-pxs: 6px, 12px, 15px, 20px, 25px;
+$size-in-ems: 1em, 2em, 4em;
+
+$list-display: block, hidden, inline-block, inline, flex, grid;
+$list-weight: 300, 400, 500, 700;
+$list-vertical: middle;
